@@ -1,4 +1,12 @@
-# Programming-Note
+# DB-Note
+## Indexing in Databases 
+Indexing is a way to optimize the performance of a database by minimizing the number of disk accesses required when a query is processed. It is a data structure technique which is used to quickly locate and access the data in a database.
+
+Indexes are created using a few database columns.
+
+- The first column is the ###### Search key that contains a copy of the primary key or candidate key of the table. These values are stored in sorted order so that the corresponding data can be accessed quickly.
+###### Note: The data may or may not be stored in sorted order.
+- The second column is the Data Reference or Pointer which contains a set of pointers holding the address of the disk block where that particular key value can be found.
 
 ## What are advantages and disadvantages of indexing in database?
 ### Advantages
