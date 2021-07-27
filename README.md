@@ -4,9 +4,18 @@ Indexing is a way to optimize the performance of a database by minimizing the nu
 
 Indexes are created using a few database columns.
 
-- The first column is the ###### Search key that contains a copy of the primary key or candidate key of the table. These values are stored in sorted order so that the corresponding data can be accessed quickly.
+- The first column is the **Search key** that contains a copy of the primary key or candidate key of the table. These values are stored in sorted order so that the corresponding data can be accessed quickly.
 ###### Note: The data may or may not be stored in sorted order.
-- The second column is the Data Reference or Pointer which contains a set of pointers holding the address of the disk block where that particular key value can be found.
+- The second column is the **Data Reference** or **Pointer** which contains a set of pointers holding the address of the disk block where that particular key value can be found.
+
+
+###### The indexing has various attributes:
+
+- **Access Types**: This refers to the type of access such as value based search, range access, etc.
+- **Access Time**: It refers to the time needed to find particular data element or set of elements.
+- **Insertion Time**: It refers to the time taken to find the appropriate space and insert a new data.
+- **Deletion Time**: Time taken to find an item and delete it as well as update the index structure.
+- **Space Overhead**: It refers to the additional space required by the index
 
 ## What are advantages and disadvantages of indexing in database?
 ### Advantages
