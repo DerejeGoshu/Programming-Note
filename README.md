@@ -30,14 +30,14 @@ Indexes take additional disk space.
 indexes slow down INSERT,UPDATE and DELETE, but will speed up UPDATE if the WHERE condition has an indexed field.  INSERT, UPDATE and DELETE becomes slower because on each operation the indexes must also be updated. 
 
 ## Stored Procedures vs Functions vs Views
-## Stored Procedures
+###### Stored Procedures
 - A **stored procedure** is a set of pre-compiled Structured Query Languages (SQL), so it can be reused and shared by multiple programs. It can access or modify data in a database.
 - **Stored procedures** are one of numerous mechanisms of encapsulating database logic in the database. They are similar to regular programming language procedures in that they take arguments, do something, and sometimes return results and sometimes even change the values of the arguments they take when arguments are declared as output parameters. You will find that they are very similar to stored functions in that they can return data; however stored procedures can not be used in queries. Since stored procedures have the mechanism of taking arguments declared as OUTPUT they can in theory return more than one output.
-## Views
+###### Views
  **Views** are similar to inline table valued function - they allow you centralize a query in an object that can be easily called from other queries. The results of the view can be used as part of that calling query, however parameters can't be passed in to the view.
 
 **Views** also have some of the security benefits of a stored procedure; they can be granted access to a view with a limited subset of data from an underlying table that those same users don't have access to.
 
 **Views** also have some performance advantages since they can have indexes added to them, essentially materializing the result set in advance of the view being called (creating faster performance). If considering between an inlined table function and a view, if you don't need to parameterize the input, a view is usually the better option.
-## Funcion
+###### Funcion
 A **Funcion**  is a database object in SQL Server. Basically, it is also a set of SQL statements that accept only input parameters and produce output in a single value form or tabular form.
