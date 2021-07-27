@@ -29,7 +29,7 @@ If index is set to fill-text index, then we can search against large string valu
 Indexes take additional disk space.
 indexes slow down INSERT,UPDATE and DELETE, but will speed up UPDATE if the WHERE condition has an indexed field.  INSERT, UPDATE and DELETE becomes slower because on each operation the indexes must also be updated. 
 
-## Stored Procedures vs Functions vs Views
+## Stored Procedures vs Functions vs Views vs Triggers
 ###### Stored Procedures
 - A **stored procedure** is a set of pre-compiled Structured Query Languages (SQL), so it can be reused and shared by multiple programs. It can access or modify data in a database.
 - **Stored procedures** are one of numerous mechanisms of encapsulating database logic in the database. They are similar to regular programming language procedures in that they take arguments, do something, and sometimes return results and sometimes even change the values of the arguments they take when arguments are declared as output parameters. You will find that they are very similar to stored functions in that they can return data; however stored procedures can not be used in queries. Since stored procedures have the mechanism of taking arguments declared as OUTPUT they can in theory return more than one output.
