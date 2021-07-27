@@ -41,3 +41,5 @@ indexes slow down INSERT,UPDATE and DELETE, but will speed up UPDATE if the WHER
 - **Views** also have some performance advantages since they can have indexes added to them, essentially materializing the result set in advance of the view being called (creating faster performance). If considering between an inlined table function and a view, if you don't need to parameterize the input, a view is usually the better option.
 ###### Funcion
 A **Funcion**  is a database object in SQL Server. Basically, it is also a set of SQL statements that accept only input parameters and produce output in a single value form or tabular form.
+###### Triggers
+- **Triggers** are objects generally tied to a table or view that run code based on certain events such as inserting data, before inserting data, updating/deleting data and before these events happen.
