@@ -1,4 +1,4 @@
-Differences between the NTFS and FAT32 memory card file systems
+# Differences between the NTFS and FAT32 memory card file systems
 Applicable products：Tablet，Smartphone
 Most commercially available memory cards use the FAT32 file system by default. NTFS and FAT32 file systems differ in the following ways:
 
